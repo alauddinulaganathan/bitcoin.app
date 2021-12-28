@@ -61,7 +61,6 @@
             speed: 500,
             asNavFor: '.slider-for',
             dots: true,
-            centerMode: true,
             focusOnSelect: true,
             slide: 'div',
             autoplay: true,
