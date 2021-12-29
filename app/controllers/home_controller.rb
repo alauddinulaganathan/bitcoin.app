@@ -7,5 +7,6 @@ class HomeController < ApplicationController
 
   def contact
     puts('contact method')
+    redirect_to root_path
   end
 end
