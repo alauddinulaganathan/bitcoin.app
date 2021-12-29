@@ -23,3 +23,4 @@
 .byebug_history
 .idea/bitcoin.app.iml
 .idea/bitcoin.app.iml
+*.iml
