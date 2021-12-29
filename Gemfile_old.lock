@@ -93,9 +93,11 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     minitest (5.14.4)
-    mysql2 (0.4.10)
+    mysql2 (0.5.3)
     nio4r (2.5.8)
     nokogiri (1.12.5-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
     pg (0.21.0)
     popper_js (1.12.9)
@@ -184,6 +186,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-19
+  x86_64-linux
 
 DEPENDENCIES
   bootstrap (~> 4.0.0.beta3)
@@ -195,7 +198,7 @@ DEPENDENCIES
   jquery-rails
   jquery-slick-rails
   magnific-popup-rails (~> 1.1.0)
-  mysql2 (>= 0.3.18, < 0.5)
+  mysql2
   pg
   puma (~> 3.7)
   rails (~> 5.1.4)

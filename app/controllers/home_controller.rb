@@ -6,7 +6,8 @@ class HomeController < ApplicationController
   end
 
   def contact
-    puts('contact method')
+    contact = Contact.new(name: params['name'], email: params['email'], message: params['message'])
+    contact.save
     redirect_to root_path
   end
 end

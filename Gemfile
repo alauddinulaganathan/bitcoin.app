@@ -40,6 +40,7 @@ gem 'magnific-popup-rails', '~> 1.1.0'
 # Use Jquery Slick for the slick slider
 gem "jquery-slick-rails"
 gem 'wow-rails'
+gem 'mysql2', '>= 0.3.18', '< 0.5'
 
 
 group :development, :test do
