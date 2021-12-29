@@ -6,8 +6,12 @@ class HomeController < ApplicationController
   end
 
   def contact
-    contact = Contact.new(name: params['name'], email: params['email'], message: params['message'])
+    contact = Contact.new(
+      name: params['name'], email: params['email'],
+      phone: params['phone'], message: params['message']
+    )
     contact.save
+    ContactMailer.with(contact: contact).contact_email.deliver_now
     redirect_to root_path
   end
 end
