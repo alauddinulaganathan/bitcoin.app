@@ -10,7 +10,7 @@ class HomeController < ApplicationController
       name: params['name'], email: params['email'],
       phone: params['phone'], message: params['message']
     )
-    contact.save
+    #contact.save
     ContactMailer.with(contact: contact).contact_email.deliver_now
     redirect_to root_path
   end
