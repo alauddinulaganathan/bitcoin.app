@@ -10,15 +10,40 @@
                     </div>
                     <div class="col-12 get-start-area">
                         <!-- Form Start -->
-                        <form method="post" class="form-inline">
-                          <div class="row col-12">
-                            <input type="email" class="col-6 form-control email" placeholder="Email">
-                            <input type="text" class="col-6 form-control email" placeholder="Phone">
+                        <!--<form method="post" class="form-inline" hidden>
+                          <div class="row">
+                            <input type="email" class="col form-control email" placeholder="Email">
+                            <input type="text" class="col form-control email" placeholder="Phone">
                           </div>
-                          <div class="row col-12">
-                            <input id="sell_button" type="submit" class="col-6 submit" value="Sell Cotton for the Best Price">
-                            <input id="buy_button" type="submit" class="col-6 submit" value="Purchase Cotton Bales (Min 32+ mm Staple Length)">
+                          <div class="row">
+                            <input id="sell_button" type="submit" class="col submit" value="Sell Cotton for the Best Price">
+                            <input id="buy_button" type="submit" class="col submit" value="Purchase Cotton Bales (Min 32+ mm Staple Length)">
                           </div>
+                        </form>-->
+                        <!-- Form End -->
+
+                        <!-- Form Start-->
+                        <form action="/home/contact" method="post">
+                            <!-- Message Input Area Start -->
+                            <div class="contact_input_area">
+                                <div class="row">
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                          <input type="text" class="form-control email" name="email" placeholder="E-mail / Mobile">
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-6">
+                                        <button type="submit" value="buy_cotton" class="home_submit btn submit-btn">Buy Cotton Bales (Min 32+ mm Staple Length)</button>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-6">
+                                        <button type="submit" value="sell_cotton" class="home_submit btn submit-btn">Sell Raw Cotton (For Best Price)</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Message Input Area End -->
                         </form>
                         <!-- Form End -->
                     </div>
@@ -26,10 +51,9 @@
             </div>
         </div>
         <!-- Welcome thumb -->
-        <div class="welcome-thumb wow fadeInDown" data-wow-delay="0.5s">
-            <%=image_tag("bg-img/welcome-img.png", alt: "")%>
-            
-        </div>
+        <!--<div class="welcome-thumb wow fadeInDown" data-wow-delay="0.5s">
+            <%#=image_tag("bg-img/welcome-img.png", alt: "")%>
+        </div>-->
     </section>
     <!-- ***** Wellcome Area End ***** -->
 

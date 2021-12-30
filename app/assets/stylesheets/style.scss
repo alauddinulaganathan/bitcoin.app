@@ -497,10 +497,17 @@ p {
 .get-start-area .email {
     background: transparent;
     height: 50px;
-    max-width: 260px;
-   border: 2px solid #fff;
+    border: 2px solid #fff;
     border-radius: 24px;
     padding: 0px 15px;
+}
+
+.get-start-area .home_submit {
+  width: 100%;
+}
+
+.removed {
+  max-width: 260px;
 }
 
 .form-control::-webkit-input-placeholder {
@@ -537,10 +544,14 @@ p {
     border: none;
     height: 50px;
     min-width: 167px;
+    max-width: 300px;
     line-height: 46px;
     text-align: center;
     border-radius: 24px 0px 24px 0px;
-    margin-left: 10px;
+}
+
+.removed {
+  margin-left: 10px;
 }
 
 .get-start-area .submit:hover {

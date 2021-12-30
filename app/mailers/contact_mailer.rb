@@ -4,6 +4,6 @@ class ContactMailer < ApplicationMailer
   def contact_email
     @contact = params[:contact]
     mail(to: 'radiantginningmills@gmail.com',
-         subject: "New Enquiry from #{@contact.name}")
+         subject: 'New Enquiry Received')
   end
 end
