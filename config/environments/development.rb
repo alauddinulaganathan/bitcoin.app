@@ -60,7 +60,7 @@ Rails.application.configure do
     user_name: 'radiantginningmills@gmail.com',
     password: 'radiant88254',
     authentication: 'plain',
-    enable_starttls_auto: true,
+    #enable_starttls_auto: true,
     open_timeout: 5,
     read_timeout: 5
   }
